@@ -3,23 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio</title>
+    <title>Portafolio de JUAN CARLOS BALCERO</title>
 </head>
 <body>
-    <h1>juan carlos</h1>
-        <h1>primer</h1>
-        <p>nuevo</p>
-    <ul>
-        <li>
-            <a href="https://juandeecsxc.github.io/hoja-de-vida-/">pagina1</a>
+    <!-- resaltado de color  -->
+    <style>
+        .nombre-resaltado {
+            display: inline-block;
+            background-color: #3f0adf;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgb(255, 255, 255);
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .nombre-resaltado:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+    <h1>Juan carlos balcero torres</h1>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Presentación -->
+     <!-- una class -->
+        <style>
+            .resaltado {
+                color: rgb(255, 119, 0);
+                font-weight: bold;
+         }
+        </style>
 
 
+    <section id="presentacion">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy analista de datos apasionado por <span style="color:crimson;">impactar de forma positiva a las personas</span></p>
+        <p>Me gusta aprender <span class="resaltado">nuevas tecnologías</span> y participar en proyectos <span class="resaltado">proyectos colaborativos </span> que aporten valor a las personas.</p>
+    </section>
 
+    <!-- Imagen de perfil -->
 
-        </li>
+    <img src="perfil.jpg" alt="Foto de " width="200">
+    <p><span class="nombre-resaltado">Juan Carlos Balcero Torres</span></p>
+    <!-- Lista de habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Excel</li>
+            <li> GitHub</li>
+            <li>mermaid</li>
+        </ul>
+    </section>
 
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
 
+        <h3>Mi sitio personal</h3>
+        <p>Un sitio web responsive desarrollado con HTML, CSS y JavaScript, diseñado para mostrar mi portafolio profesional.</p>
 
-    </ul>
+        <img src="proyecto.png" alt="Captura del sitio personal" width="300">
+
+        <!-- Tabla de proyectos -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre del Proyecto</th>
+                    <th>Tecnologías Usadas</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>portafoliol</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td><a href="https://juandeecsxc.github.io/portafolio/" target="_blank">Ver Proyecto</a></td>
+                </tr>
+                <tr>
+                    <td>hoja de vida</td>
+                    <td>HTML</td>
+                    <td><a href="https://juandeecsxc.github.io/hoja-de-vida-/" target="_blank">Ver Proyecto</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="/send" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Enlaces a redes sociales -->
+    <footer>
+        <h2>Redes Sociales</h2>
+        <a href="https://github.com/juandeecsxc" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/juanbalcero/" target="_blank">LinkedIn</a>
+    </footer>
+
 </body>
 </html>
